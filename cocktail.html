@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div id="navbar">
+      <div class="logo">
+        <h3>winn-<span>Cocktail</span></h3>
+      </div>
+      <nav >
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>UTF-8
+            <a href="">Training</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        onClick={openSidebar}>
+        <GiHamburgerMenu className="menubar"/>
+      </div>
+    </div>
+  </header>
+       <div class='search-form'>
+          <form>
+              <div class="form-control">
+                  <label htmlFor="search-input">Search for your favourite <span>cocktail</span> </label>
+                  <input 
+                      type="text" 
+                      id='search-input' 
+                      placeholder="Search for your favourite drink"
+                      />
+              </div>
+              <button id="submit">submit</button>
+          </form>
+      </div>
+      <section  class='section main'>
+          <div class="title">
+            <h3>Cocktails:</h3>
+          </div>
+          <div class='cocktail-list'>
+                     <article key={id}>
+                        <div class="image">
+                        <img src="https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg" alt=""/>
+                        </div>
+                      <div class="description">
+                          <h4>{name}</h4>
+                          <div class="sub">
+                            <p>Category :</p> <p>{category}</p>
+                          </div>
+                          <div class="sub">
+                            <p>Serving glass :</p> <p>{glass}</p>
+                          </div>
+                        <a href='details.html'>
+                            <button>
+                              More Details 
+                            </button>
+               </a>
+                        
+                      </div>
+
+                </article>
+                 <article key={id}>
+                        <div class="image">
+                        <img src="https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg" alt=""/>
+                        </div>
+                      <div class="description">
+                          <h4>{name}</h4>
+                          <div class="sub">
+                            <p>Category :</p> <p>{category}</p>
+                          </div>
+                          <div class="sub">
+                            <p>Serving glass :</p> <p>{glass}</p>
+                          </div>
+                          
+                          <Link to={/singleCocktail/${id}}>
+                            <button>
+                              More Details 
+                            </button>
+                          </Link>
+                        
+                      </div>
+
+                </article>
+                 <article key={id}>
+                        <div class="image">
+                        <img src="https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg" alt=""/>
+                        </div>
+                      <div class="description">
+                          <h4>{name}</h4>
+                          <div class="sub">
+                            <p>Category :</p> <p>{category}</p>
+                          </div>
+                          <div class="sub">
+                            <p>Serving glass :</p> <p>{glass}</p>
+                          </div>
+                          
+                          <Link to={/singleCocktail/${id}}>
+                            <button>
+                              More Details 
+                            </button>
+                          </Link>
+                        
+                      </div>
+
+                </article> 
+
+                 <article key={id}>
+                        <div class="image">
+                        <img src="https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg" alt=""/>
+                        </div>
+                      <div class="description">
+                          <h4>{name}</h4>
+                          <div class="sub">
+                            <p>Category :</p> <p>{category}</p>
+                          </div>
+                          <div class="sub">
+                            <p>Serving glass :</p> <p>{glass}</p>
+                          </div>
+                          
+                          <Link to={/singleCocktail/${id}}>
+                            <button>
+                              More Details 
+                            </button>
+                          </Link>
+                        
+                      </div>
+
+                </article> 
+
+                 <article key={id}>
+                        <div class="image">
+                        <img src="https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg" alt=""/>
+                        </div>
+                      <div class="description">
+                          <h4>{name}</h4>
+                          <div class="sub">
+                            <p>Category :</p> <p>{category}</p>
+                          </div>
+                          <div class="sub">
+                            <p>Serving glass :</p> <p>{glass}</p>
+                          </div>
+                          
+                          <Link to={/singleCocktail/${id}}>
+                            <button>
+                              More Details 
+                            </button>
+                          </Link>
+                        
+                      </div>
+
+                </article> 
+
+                 <article key={id}>
+                        <div class="image">
+                        <img src="https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg" alt=""/>
+                        </div>
+                      <div class="description">
+                          <h4>{name}</h4>
+                          <div class="sub">
+                            <p>Category :</p> <p>{category}</p>
+                          </div>
+                          <div class="sub">
+                            <p>Serving glass :</p> <p>{glass}</p>
+                          </div>
+                          
+                          <Link to={/singleCocktail/${id}}>
+                            <button>
+                              More Details 
+                            </button>
+                          </Link>
+                        
+                      </div>
+
+                </article>
+          </div>
+         
+       </section>
+     <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 10px gray;
+  padding: 20px 30px;
+  align-items: center;
+}
+#navbar ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+#navbar ul li :hover::after{
+  content: '';
+  height: 2px;
+  background-color: orange;
+  position: relative;
+  width: 100;
+  display: block;
+}
+#navbar ul li a{
+  text-decoration: none;
+  color: green;
+}
+#navbar .logo h3{
+  color: green;
+}
+#navbar .logo h3 span{
+  color: orangered;
+}
+#navbar div a{
+  text-decoration: none;
+  color: black;
+}
