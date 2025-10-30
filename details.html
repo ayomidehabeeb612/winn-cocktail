@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cocktail Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.html">⬅ Back</a>
+  <div id="details-container"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const api = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=' + id;
+    const container = document.querySelector('#details-container');
+
+    fetch(api)
+      .then(res => res.json())
+      .then(data => {
+        const drink = data.drinks[0];
+        container.innerHTML = `
+          <h2>${drink.strDrink}</h2>
+          <img src="${drink.strDrinkThumb}" width="300"/>
+          <p><strong>Category:</strong> ${drink.strCategory}</p>
+          <p><strong>Glass:</strong> ${drink.strGlass}</p>
+          <p><strong>Instructions:</strong> ${drink.strInstructions}</p>
+        `;
+      })
+      .catch(() => {
+        container.innerHTML = '<p>Could not load details.</p>';
+      });
+  </script>
+</body>
+</html>

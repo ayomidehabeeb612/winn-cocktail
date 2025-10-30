@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocktail Search</title>
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div id="navbar">
+      <div class="logo">
+        <h3>winn-<span>Cocktail</span></h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Training</a></li>
+        </ul>
+      </nav>
+      <div id="menu-icon">☰</div>
+    </div>
+  </header>
+
+  <div class="search-form">
+    <form>
+      <div class="form-control">
+        <label for="search-input">Search for your favourite <span>cocktail</span></label>
+        <input type="text" id="search-input" placeholder="Search for your favourite drink" />
+      </div>
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+
+  <section class="section main">
+    <div class="title">
+      <h3>Cocktails:</h3>
+    </div>
+    <div class="cocktail-list"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
