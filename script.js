@@ -1,4 +1,3 @@
-
 const apiEndpoint = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 const submitButton = document.querySelector('#submit')
 const input = document.querySelector('#search-input')
